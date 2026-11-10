@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-cd "$HOME/python" || exit 1
+cd "$HOME/Python" || exit 1
 
 # Check Git repository
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then

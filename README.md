@@ -45,8 +45,6 @@ git branch -M main
 # 7. Apni repository se connect karo
 git remote add origin 'YOUR_REPOSITORY_LINK'
 
-# 8. GitHub par push karo
-git push -u origin main
 ```
 
 > `folder_name`, `Your Name`, `your@email.com` aur `YOUR_REPOSITORY_LINK` ko apni details se badal dena.

@@ -5,5 +5,6 @@ def avr():
 	
 	avr=(a+b+c)/3
 	print(avr)
+avr()
 
 

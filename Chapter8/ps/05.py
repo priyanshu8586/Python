@@ -3,5 +3,5 @@ def patten(n):
 	if(n==0):
 		return
 	print("*" * n)
-	print("" * n-1)
+	patten( n-1)
 print(patten(n))

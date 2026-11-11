@@ -4,4 +4,4 @@ def patten(n):
 		return
 	print("*" * n)
 	patten( n-1)
-print(patten(n))
+

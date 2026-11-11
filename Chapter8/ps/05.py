@@ -5,3 +5,4 @@ def patten(n):
 	print("*" * n)
 	patten( n-1)
 
+patten(n)

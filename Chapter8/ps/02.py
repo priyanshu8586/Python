@@ -3,4 +3,4 @@ def f_to_c(f):
 
 f=int(input("Enter teemper in f : "))
 c=f_to_c(f)
-print(f"{round(c,2)} c" )
+print(f"{round(c,2)}°c" )

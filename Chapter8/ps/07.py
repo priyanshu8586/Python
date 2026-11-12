@@ -6,5 +6,5 @@ def rem(l,word):
 		if not(item == word):
 			n.append(item.strip(word))
 	return n
-word=inpurt('Enter your remove name :')
+word=input('Enter your remove name :')
 print(rem(l,word))

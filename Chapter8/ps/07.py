@@ -8,4 +8,3 @@ def rem(l,word):
 	return n
 word=input('Enter remove word :')
 print(rem(l,word))
-print("1) priyanshu , 2) ashok")

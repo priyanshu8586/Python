@@ -6,6 +6,8 @@ choices = {1: "Rock", 2: "Paper", 3: "Scissors"}
 # Dictionary: what each choice beats
 beats = {1: 3, 2: 1, 3: 2}  # Rock beats Scissors, Paper beats Rock, Scissors beats Paper
 
+WIN_SCORE = 10  # first to reach this score ends the game
+
 player_score = 0
 computer_score = 0
 
@@ -41,6 +43,10 @@ while True:
         computer_score += 1
 
     print(f"Score -> Player: {player_score} | Computer: {computer_score}")
+
+    if player_score == WIN_SCORE or computer_score == WIN_SCORE:
+        print(f"\nSomeone reached {WIN_SCORE} points. Game over!")
+        break
 
 print("\n=== Final Score ===")
 print(f"Player: {player_score}")

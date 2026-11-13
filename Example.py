@@ -4,6 +4,4 @@ def table(n):
     return i*n
 
 table(n)
-
-
-  
+print(f"{i}x{n}={i*n}")

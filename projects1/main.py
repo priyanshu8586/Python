@@ -28,7 +28,8 @@ if player == computer:
     print("It's a tie!")
 elif (player - computer) % 3 == 1:
     print("You win!")
+    wins+=1
 else:
     print("You lose!")
-
+    losses +=1
 print(f"Score - You: {wins}, Computer: {losses}")

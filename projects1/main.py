@@ -9,7 +9,7 @@ print("0 = Quit")
 
 # Keep asking until the player enters 1, 2, 3 or 0 
 while True:
-    text = input("Enter a number (1, 2, 3 or 0 to quit): ")
+    text = input("Enter a number : ")
     if text in ("0", "1", "2", "3"):
         player = int(text)
         break

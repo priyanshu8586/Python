@@ -19,7 +19,7 @@ if player == 0:
     print("Thanks for playing!")
     #break 
 
-computer = random.randint(1, 3, 2)
+computer = random.randint(1, 3, )
 
 print("You chose:", names[player])
 print("Computer chose:", names[computer])

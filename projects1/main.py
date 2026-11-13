@@ -29,7 +29,7 @@ while True:
         break
 
     if player not in choices:
-        print("Invalid number. Use 1, 2, 3 or 0 to quit.")
+        print("Invalid number. Use 1, 2, 3 or 0 to ")
         continue
 
     computer = random.randint(1, 3)

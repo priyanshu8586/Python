@@ -5,6 +5,7 @@ names = {1: "Rock", 2: "Paper", 3: "Scissors"}
 print("1 = Rock")
 print("2 = Paper")
 print("3 = Scissors")
+print("0 = Quit")
 
 # Keep asking until the player enters 1, 2, or 3
 while True:

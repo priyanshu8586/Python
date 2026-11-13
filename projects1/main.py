@@ -15,7 +15,7 @@ print("=== Rock Paper Scissors ===")
 print("1 = Rock")
 print("2 = Paper")
 print("3 = Scissors")
-print(" 0 = Quit")
+print("0 = Quit")
 
 while True:
     try:

@@ -30,3 +30,5 @@ elif (player - computer) % 3 == 1:
     print("You win!")
 else:
     print("You lose!")
+
+print(f"Score - You: {wins}, Computer: {losses}")

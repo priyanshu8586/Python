@@ -1,43 +1,27 @@
 import random
 
-choices = ["rock", "paper", "scissors"]
-wins = losses = 0
+names = {1: "Rock", 2: "Paper", 3: "Scissors"}
 
+print("1 = Rock")
+print("2 = Paper")
+print("3 = Scissors")
+
+# Keep asking until the player enters 1, 2, or 3
 while True:
-    print("\n1. Rock")
-    print("2. Paper")
-    print("3. Scissors")
-    print("0. Quit")
-
-    try:
-        player = int(input("Enter a number: "))
-    except ValueError:
-        print("Please enter a number only.")
-        continue
-
-    if player == 0:
-        print(f"Final score - You: {wins}, Computer: {losses}")
+    text = input("Enter a number (1, 2, or 3): ")
+    if text in ("1", "2", "3"):
+        player = int(text)
         break
+    print("Wrong input! Numbers 1, 2, or 3 only.")
 
-    if player not in choices:
-        print("Invalid number. Enter 1, 2, or 3.")
-        continue
+computer = random.randint(1, 3)
 
-      
-    computer = random.choice(choices)
-    print(f"Computer chose: {computer}")
+print("You chose:", names[player])
+print("Computer chose:", names[computer])
 
-    if player == computer:
-        print("Tie! Choose again.")
-        continue
-
-    if (player == "rock" and computer == "scissors") or \
-       (player == "paper" and computer == "rock") or \
-       (player == "scissors" and computer == "paper"):
-        print("You win!")
-        wins += 1
-    else:
-        print("You lose!")
-        losses += 1
-
-    print(f"Score - You: {wins}, Computer: {losses}")
+if player == computer:
+    print("It's a tie!")
+elif (player - computer) % 3 == 1:
+    print("You win!")
+else:
+    print("You lose!")

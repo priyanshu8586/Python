@@ -3,7 +3,7 @@ import random
 choices = ["rock", "paper", "scissors"]
 
 while True:
-    player = input("Choose rock, paper, or scissors (or 'quit'): ").lower()
+    player = input("Choose rock, paper, or scissors  ").lower()
 
     if player == "quit":
         print("Thanks for playing!")

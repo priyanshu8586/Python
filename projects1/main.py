@@ -17,7 +17,7 @@ while True:
 
 if player == 0:
     print("Thanks for playing!")
-    print(Final score - You: {wins}, Computer: {losses}")
+    print(Final score - You: {wins}, Computer: {losses})
     #break 
 
 computer = random.randint(1, 3 )

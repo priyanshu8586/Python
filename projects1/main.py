@@ -12,7 +12,10 @@ player_score = 0
 computer_score = 0
 
 print("=== Rock Paper Scissors ===")
-print("1 = Rock, 2 = Paper, 3 = Scissors, 0 = Quit")
+print("1 = Rock")
+print("2 = Paper")
+print("3 = Scissors")
+print(" 0 = Quit")
 
 while True:
     try:

@@ -26,7 +26,7 @@ print("Computer chose:", names[computer])
 
 if player == computer:
     print("It's a tie!")
-elif (player - computer) % 3 == 1:
+elif (player - computer) % 4 == 1:
     print("You win!")
 else:
     print("You lose!")

@@ -4,16 +4,26 @@ choices = ["rock", "paper", "scissors"]
 wins = losses = 0
 
 while True:
-    player = input("Choose rock, paper, or scissors (or 'quit'): ").lower()
+    print("\n1. Rock")
+    print("2. Paper")
+    print("3. Scissors")
+    print("0. Quit")
 
-    if player == "quit":
+    try:
+        player = int(input("Enter a number: "))
+    except ValueError:
+        print("Please enter a number only.")
+        continue
+
+    if player == 0:
         print(f"Final score - You: {wins}, Computer: {losses}")
         break
 
     if player not in choices:
-        print("Invalid choice. Try again.")
+        print("Invalid number. Enter 1, 2, or 3.")
         continue
 
+      
     computer = random.choice(choices)
     print(f"Computer chose: {computer}")
 

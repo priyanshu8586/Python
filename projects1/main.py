@@ -9,12 +9,15 @@ print("0 = Quit")
 
 # Keep asking until the player enters 1, 2, or 3
 while True:
-    text = input("Enter a number (1, 2, or 3): ")
-    if text in ("1", "2", "3"):
+    text = input("Enter a number (1, 2, 3 or 0 to quit): ")
+    if text in ("0", "1", "2", "3"):
         player = int(text)
         break
-    print("Wrong input! Numbers 1, 2, or 3 only.")
-    
+    print("Wrong input! Numbers 0, 1, 2, or 3 only.")
+
+if player == 0:
+    print("Thanks for playing!")
+    break
 
 computer = random.randint(1, 3)
 

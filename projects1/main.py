@@ -7,7 +7,7 @@ print("2 = Paper")
 print("3 = Scissors")
 print("0 = Quit")
 
-# Keep asking until the player enters 1, 2, or 3
+# Keep asking until the player enters 1, 2, 3 or 0 
 while True:
     text = input("Enter a number (1, 2, 3 or 0 to quit): ")
     if text in ("0", "1", "2", "3"):
@@ -17,7 +17,7 @@ while True:
 
 if player == 0:
     print("Thanks for playing!")
-    break
+    break 
 
 computer = random.randint(1, 3)
 

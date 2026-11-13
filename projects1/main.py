@@ -4,7 +4,7 @@ import random
 choices = {1: "Rock", 2: "Paper", 3: "Scissors"}
 
 # Dictionary: what each choice beats
-beats = {1: 3, 2: 1, 3: 2}  # Rock beats Scissors, Paper beats Rock, Scissors beats Paper
+beats = {1:2,1:3,2:1,2:3,3:2,3:1}  # Rock beats Scissors, Paper beats Rock, Scissors beats Paper
 
 WIN_SCORE = int(input("Set the winig score :"))  # first to reach this score ends the game
 

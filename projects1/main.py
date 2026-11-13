@@ -13,6 +13,7 @@ while True:
         player = int(text)
         break
     print("Wrong input! Numbers 1, 2, or 3 only.")
+    continue
 
 computer = random.randint(1, 3)
 

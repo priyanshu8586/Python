@@ -17,7 +17,7 @@ while True:
 
 if player == 0:
     print("Thanks for playing!")
-    break 
+    #break 
 
 computer = random.randint(1, 3, 2)
 

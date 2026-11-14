@@ -16,6 +16,5 @@ line=f.readline()
 while(line != ""):
   print(line)
   # line=f.readline()
-  # end 
-  exit
+  # end
 f.close()
